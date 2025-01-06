@@ -28,6 +28,8 @@ async def log_user_action(action: str):
 async def email_send(email: str, subject: str):
     try:
         server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
+        server.ehlo()
+        print(server.ehlo())
         server.login(SMTP_LOGIN, SMTP_PASSWORD)
         message = create_email_message(SMTP_SENDER, email, subject)
         server.sendmail(SMTP_SENDER, email, message.as_string())
