@@ -4,6 +4,7 @@ from fastapi import FastAPI, BackgroundTasks, HTTPException
 import logging
 from pydantic import BaseModel, EmailStr
 from tools import *
+from settings import *
 
 
 app = FastAPI(docs_url="/")
@@ -26,10 +27,10 @@ async def log_user_action(action: str):
 
 async def email_send(email: str, subject: str):
     try:
-        server = smtplib.SMTP(smt_server, port)
-        server.login(login, password)
-        message = create_email_message(sender, email, subject)
-        server.sendmail(sender, email, message.as_string())
+        server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
+        server.login(SMTP_LOGIN, SMTP_PASSWORD)
+        message = create_email_message(SMTP_SENDER, email, subject)
+        server.sendmail(SMTP_SENDER, email, message.as_string())
         server.quit()
         logging.info(f"Email sent to {email} with subject '{subject}'")
     except Exception as e:

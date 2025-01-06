@@ -1,17 +1,1 @@
 
-2025-01-06 20:36:16,343 - Email sent to this email -- user@example.com with string
-2025-01-06 20:36:16,343 - User sent an email to user@example.com
-2025-01-06 20:36:19,642 - 1 change detected
-2025-01-06 20:36:43,694 - 1 change detected
-2025-01-06 20:36:53,632 - 1 change detected
-2025-01-06 20:36:58,021 - 1 change detected
-2025-01-06 20:37:01,297 - 1 change detected
-2025-01-06 20:37:02,161 - 1 change detected
-2025-01-06 20:55:35,377 - 3 changes detected
-2025-01-06 20:59:35,948 - 1 change detected
-2025-01-06 20:59:58,985 - 6 changes detected
-2025-01-06 21:03:28,393 - 3 changes detected
-2025-01-06 21:10:16,319 - Failed to send email to dykovm11@gmail.com: STARTTLS extension not supported by server.
-2025-01-06 21:12:52,118 - 3 changes detected
-2025-01-06 21:13:28,509 - Email sent to dykovm11@gmail.com with subject 'Hi Tom, how are u?'
-2025-01-06 21:13:28,509 - User sent an email to dykovm11@gmail.com
