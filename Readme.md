@@ -9,6 +9,7 @@
 - **Логування дій користувачів:** Збереження всіх дій користувачів у окремий файл.
 
 - **Отримання логів**: Доступ до журналів дій користувачів для моніторингу та налагодження.
+- 
 - **Щоб отримати повідомлення**: Зайдіть та зареєйструйтесь на сайті https://mailmug.net/.
 ## Вимоги
 
@@ -36,8 +37,15 @@
     pip install -r requirements.txt
     ```
 
-
-3. **Запустіть сервер**:
+3. **Створіть файл .env у кореневій директорії з наступною конфігурацією SMTP **:
+   ```bash
+   SMTP_SERVER=smtp.mailmug.net
+   SMTP_PORT=2525
+   SMTP_LOGIN=your_mailmug_username
+   SMTP_PASSWORD=your_mailmug_password
+   SMTP_SENDER=your_email_adress  (** write your email adress)
+    ```
+4. **Запустіть сервер**:
 
     Запустіть сервер за допомогою Uvicorn:
 
